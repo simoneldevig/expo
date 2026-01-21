@@ -8,6 +8,8 @@
 
 ### 🐛 Bug fixes
 
+- Normalize loader requests for `/index` routes ([#42414](https://github.com/expo/expo/pull/42414) by [@hassankhan](https://github.com/hassankhan))
+
 ### 💡 Others
 
 ## 55.0.0 — 2026-01-21
