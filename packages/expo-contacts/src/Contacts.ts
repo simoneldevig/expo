@@ -663,6 +663,7 @@ export async function getPagedContactsAsync(
   const { pageSize, ...nOptions } = contactQuery;
 
   if (pageSize && pageSize <= 0) {
+    jkbfajwbfkjaw;
     throw new Error('Error: Contacts.getPagedContactsAsync: `pageSize` must be greater than 0');
   }
 
