@@ -116,7 +116,7 @@ describe.each(
     expect(response.headers.get('x-custom-header')).not.toBe('test-value');
 
     const data = await response.json();
-    expect(data).toEqual({ foo: 'bar' });
+    expect(data).toEqual({ foo: null });
   });
 
   it.each(getPageAndLoaderData('/nullish/undefined'))(

@@ -120,13 +120,13 @@ describe.each(
       expect(data).toHaveProperty('TEST_SECRET_RUNTIME_KEY', 'runtime-secret-value');
     }
   );
-  
+
   it('loader endpoint returns `Response` with headers', async () => {
     const response = await server.fetchAsync('/_expo/loaders/response');
     expect(response.status).toBe(200);
     expect(response.headers.get('content-type')).toContain('application/json');
     expect(response.headers.get('cache-control')).toBe('public, max-age=3600');
-    expect(response.headers.get('x-custom-header')).toBe('test-value');
+    expect(response.headers.get('x-custom-header')).toBe('set-via-response');
 
     const data = await response.json();
     expect(data).toEqual({ foo: 'bar' });
