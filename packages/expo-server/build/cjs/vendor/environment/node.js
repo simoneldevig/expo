@@ -44,6 +44,7 @@ function createNodeEnv(params) {
         readText,
         readJson,
         loadModule,
+        isDevelopment: params.environment === 'development',
     });
 }
 function createNodeRequestScope(scopeDefinition, params) {

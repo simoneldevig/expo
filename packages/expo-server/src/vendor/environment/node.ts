@@ -46,6 +46,7 @@ export function createNodeEnv(params: NodeEnvParams) {
     readText,
     readJson,
     loadModule,
+    isDevelopment: params.environment === 'development',
   });
 }
 

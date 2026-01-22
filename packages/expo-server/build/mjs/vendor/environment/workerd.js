@@ -55,6 +55,7 @@ export function createWorkerdEnv(params) {
         readText,
         readJson,
         loadModule,
+        isDevelopment: params.environment === 'development',
     });
 }
 export function createWorkerdRequestScope(scopeDefinition, params) {

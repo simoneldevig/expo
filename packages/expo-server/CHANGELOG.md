@@ -8,6 +8,8 @@
 
 ### 🐛 Bug fixes
 
+- Allow busting the cached manifest and SSR renderer during development ([#42411](https://github.com/expo/expo/pull/42411) by [@hassankhan](https://github.com/hassankhan))
+
 ### 💡 Others
 
 ## 55.0.0 — 2026-01-21

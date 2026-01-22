@@ -62,6 +62,7 @@ export function createWorkerdEnv(params: WorkerdEnvParams) {
     readText,
     readJson,
     loadModule,
+    isDevelopment: params.environment === 'development',
   });
 }
 
